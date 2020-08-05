@@ -2,11 +2,10 @@ import React, { Component, Fragment } from 'react'
 import List from '../components/List'
 import axios from "axios";
 
-import { Typography, Toolbar, AppBar } from "@material-ui/core";
-import { withStyles } from "@material-ui/core";
+import AppNav from '../components/AppNav';
 
 
-class PokeListContainer extends Component {
+export default class PokeListContainer extends Component {
 
     constructor(props) {
         super(props)
@@ -33,28 +32,15 @@ class PokeListContainer extends Component {
 
     render() {
 
-        const { classes } = this.props
-
         const { pokeData } = this.state
 
         return (
 
             <Fragment>
-                <AppBar className={classes.NavColor} position="static">
-                    <Toolbar variant="dense" >
-                        <Typography variant='h6' component='p' >PokeApp</Typography>
-                    </Toolbar>
-                </AppBar>
-
+                <AppNav />
                 <List pokedata={pokeData} />
 
             </Fragment>
         )
     }
 }
-
-export default withStyles({
-    NavColor: {
-        backgroundColor: '#EF5350'
-    }
-})(PokeListContainer);

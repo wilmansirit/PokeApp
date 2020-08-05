@@ -69,7 +69,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 <!-- ************************************************************************************** -->
 
-## Usando Material-UI Components:
+## Components:
 
-[Material-UI](https://material-ui.com/es/)
-[Curso de #ReactJs - Material UI components](https://www.youtube.com/watch?v=nTy61Fj85Nw&list=PL4qycS8CTHjtMkDeqBHii9gviQKc0P68g&index=15)
+Material-UI componentes para REACT: [Material-UI](https://material-ui.com/es/)
+Video Tutorial de ProCodeTV [Curso de #ReactJs - Material UI components](https://www.youtube.com/watch?v=nTy61Fj85Nw&list=PL4qycS8CTHjtMkDeqBHii9gviQKc0P68g&index=15)

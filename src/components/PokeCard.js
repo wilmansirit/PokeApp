@@ -1,12 +1,48 @@
 import React from 'react'
 
-export default function PokeCard(props) {
+import { Card, CardMedia, CardContent, Typography } from "@material-ui/core";
+import { withStyles } from "@material-ui/core";
+import { Link } from 'react-router-dom';
+
+
+function PokeCard({ name, classes, image, to }) {
+
     return (
-        <div>
 
-            <h3>{props.name}</h3>
-            <p>Ataque:</p>
+        <Card className={classes.item}>
 
-        </div>
+            <CardMedia
+                className={classes.media}
+                image={image}
+                alt={name}
+                title={name}
+            />
+            <CardContent>
+
+                <Link to={to}>
+
+                    <Typography component="p" variant="h6" > {name} </Typography>
+
+                </Link>
+
+
+
+            </CardContent>
+
+        </Card>
+
+
     )
 }
+
+export default withStyles({
+    item: {
+        minWidth: "350px",
+        margin: "1em",
+        textAlign: "center",
+        boxSizing: "border-box"
+    },
+    media: {
+        minHeight: "350px"
+    }
+})(PokeCard)
