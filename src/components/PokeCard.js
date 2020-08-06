@@ -5,7 +5,7 @@ import { withStyles } from "@material-ui/core";
 import { Link } from 'react-router-dom';
 
 
-function PokeCard({ name, classes, image, to }) {
+function PokeCard({ name, classes, image, to = '' }) {
 
     return (
 
@@ -18,15 +18,8 @@ function PokeCard({ name, classes, image, to }) {
                 title={name}
             />
             <CardContent>
-
-                <Link to={to}>
-
-                    <Typography component="p" variant="h6" > {name} </Typography>
-
-                </Link>
-
-
-
+                {/* link to PokeInfoContainer */}
+                <Link to={to}><Typography component="p" variant="h6" color="textPrimary"> {name} </Typography></Link>
             </CardContent>
 
         </Card>

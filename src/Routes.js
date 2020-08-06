@@ -18,7 +18,7 @@ export default function Routes() {
                     <Route exact path='/' component={Home} />
                     <Route path='/pokemons' component={PokeListContainer} />
                     <Route path='/material' component={MediaCard} />
-                    <Route exact path="/poke-info/:pokeIndex" component={PokeInfoContainer} />
+                    <Route exact path="/poke-info/:pokeIndex/:pokeName" component={PokeInfoContainer} />
 
                 </Switch>
             </BrowserRouter>
