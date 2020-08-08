@@ -30,12 +30,12 @@ function PokeCard({ name, classes, image, to = '' }) {
 
 export default withStyles({
     item: {
-        minWidth: "350px",
+        width: "350px",
         margin: "1em",
         textAlign: "center",
         boxSizing: "border-box"
     },
     media: {
-        minHeight: "350px"
+        height: "350px"
     }
 })(PokeCard)
